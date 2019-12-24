@@ -1,0 +1,9 @@
+
+<h2 [className]="nazwaKlasy">event-binding</h2>
+<img [src]="logoUrl"> <br>
+<input [value]="tekst"> <br>
+<input (focus)="onFocus()"> Focus event bound to field<br>
+<input (click)="onClick($event)"> Click event bound to field<br>
+<input (mousemove)="onMousemove($event)" [value] = "on_mouse_move_message"> Mousemove event bound to field<br>
+<input (paste)="onPaste($event)" > {{password}}<br>
+<button (click)="change()"> ClickToChange </button>
